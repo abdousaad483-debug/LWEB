@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+color:white;
+}
+
+.wrapper{
+width:1100px;
+max-width:100%;
+}
+
+.notice{
+background:rgba(255,0,0,.15);
+border:1px solid rgba(255,0,0,.4);
+color:#ff7b7b;
+padding:15px;
+text-align:center;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(255,0,0,.2);
+}
+
+.panel{
+background:rgba(20,20,25,.95);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+padding:30px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+box-shadow:
+0 0 50px rgba(255,0,0,.1),
+inset 0 0 20px rgba(255,255,255,.03);
+}
+
+.card{
+background:#16161d;
+border-radius:15px;
+padding:25px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.logo{
+width:90px;
+height:90px;
+border-radius:50%;
+background:linear-gradient(45deg,#ff0000,#ff8800);
+margin:auto;
+box-shadow:0 0 25px red;
+}
+
+h1{
+text-align:center;
+margin:20px 0;
+font-size:28px;
+}
+
+input{
+width:100%;
+padding:14px;
+background:#0f0f14;
+border:1px solid #333;
+color:white;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.primary{
+background:linear-gradient(90deg,#ff3333,#ff6666);
+color:white;
+}
+
+.secondary{
+background:#24242d;
+color:white;
+}
+
+.claims{
+min-height:350px;
+}
+
+.claims h2{
+margin-bottom:20px;
+color:#ff7777;
+}
+
+.empty{
+opacity:.6;
+text-align:center;
+margin-top:120px;
+}
+
+@media(max-width:900px){
+
+.panel{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="notice">
+NOTICE : BUY NOW 50% DISCOUNT LIFETIME ACCESS
+</div>
+
+<div class="panel">
+
+<div class="card">
+
+<div class="logo"></div>
+
+<h1>EX CHEATS OFFICIAL</h1>
+
+<input type="text" placeholder="Gaming UID">
+
+<button class="primary">
+CLAIM FREE TRIAL
+</button>
+
+<button class="secondary">
+WHATSAPP SUPPORT
+</button>
+
+<button class="secondary">
+DISCORD SERVER
+</button>
+
+</div>
+
+<div class="card claims">
+
+<h2>RECENT CLAIMS</h2>
+
+<div class="empty">
+No claims recorded yet.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
